@@ -13,10 +13,4 @@ if %count% geq 30 (
     goto end
 )
 goto waitfile
-
-:convert
-rem Chuyển đổi file webm sang mp3
-ffmpeg -i "tenbainhac.webm" -vn -ab 192k -ar 44100 -y "tenbainhac.mp3"
-
-:end
 pause
